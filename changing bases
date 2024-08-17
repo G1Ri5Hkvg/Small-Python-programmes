@@ -1,0 +1,45 @@
+numberstring=input("Enter a number: ")
+numberint=int(numberstring)
+binary=[]
+
+q=numberint
+r=numberint
+while q>0:
+  r=q%2
+  q=q//2
+  binary.append(r)
+
+
+else:
+  binary.reverse()
+  length=len(binary)
+  for i in range(0,len(binary)):
+    print(binary[i],end="")
+
+
+
+
+
+
+
+
+numberint=int(input("Enter a number in base 10: "))
+base=int(input("What base do you want your output to be in?"))
+if base>10:
+  print("Please enter a number between 1 and 10")
+else:
+ result=[]
+
+ q=numberint
+ r=numberint
+ while q>0:
+   r=q%base
+   q=q//base
+   result.append(r)
+
+
+ else:
+   result.reverse()
+   length=len(result)
+   for i in range(0,len(result)):
+     print(result[i],end="")
