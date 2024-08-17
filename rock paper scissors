@@ -1,0 +1,15 @@
+human=input("Rock, paper or scissors? ")
+human.lower()
+import random
+list1=["rock","paper","scissor"]
+b=random.randint(0,2)
+gen=list1[b]
+print(gen)
+if human!="rock" and human!="paper" and human!="scissor":
+  print("Restart the programme and enter rock, paper or scissors.")
+elif human=="rock" and gen=="scissor" or human=="scissor" and gen=="paper" or human=="paper" and gen=="rock":
+  print("You win")
+elif human=="rock" and gen=="rock" or human=="scissor" and gen=="scissor" or human=="paper" and gen=="paper":
+  print("It was a draw")
+elif gen=="rock" and human=="scissor" or gen=="scissor" and human=="paper" or gen=="paper" and human=="rock":
+  print("You lost")
