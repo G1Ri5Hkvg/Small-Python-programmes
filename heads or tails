@@ -1,0 +1,14 @@
+a=input("Enter Heads or Tails: ")
+a.lower()
+if a=="heads":
+  b=1
+elif a=="tails":
+  b=2
+else:
+  print("Please restart the programme and enter Heads or Tails")
+import random
+c=random.randint(1,2)
+if c==b:
+  print("You win")
+else:
+  print("You lose")
