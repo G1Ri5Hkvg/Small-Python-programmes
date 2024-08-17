@@ -1,0 +1,49 @@
+import math
+prime=int(input("Enter a number: "))
+i=2
+is_prime=True
+if prime==2:
+  print("Your number is a composite number")
+else:
+  while i<=1+int(math.sqrt(prime)):
+    i=i+1
+    if prime%i==0:
+      is_prime=False
+      print("Your number is not a prime number")
+      break
+  if is_prime==True:
+    print("Your number is a composite number")
+
+
+
+prime=int(input("Enter a number: "))
+is_prime=True
+import math
+if prime==2:
+  print("Your number is a prime number")
+else:
+  for i in range(2,prime):
+    if prime%i==0:
+      is_prime=False
+      print("Your number is a composite number")
+      break
+  if is_prime==True:
+    print("Your number is a prime number")
+
+
+
+
+
+
+prime=int(input("Enter a number: "))
+for k in range(prime,1,-1):
+  is_prime=True
+  for i in range(2,k):
+    if k%i==0:
+      is_prime=False
+      break
+  if is_prime==True:
+    print(k)
+    break
+
+
