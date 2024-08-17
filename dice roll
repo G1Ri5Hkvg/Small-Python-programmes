@@ -1,0 +1,15 @@
+yorn=input("Do you want to roll some dice? ")
+yorn.lower()
+if yorn!="yes" and yorn!="no":
+  print("Please enter yes or no")
+elif yorn=="yes":
+  times=int(input("How many dice do you want to roll? "))
+  if times==0:
+    print("Please enter yes or no")
+  else:
+    for i in range(1,times+1):
+      import random
+      roll=random.randint(1,6)
+      print(i,roll)
+elif yorn=="no":
+  print("OK")
